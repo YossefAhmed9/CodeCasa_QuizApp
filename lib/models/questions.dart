@@ -8,7 +8,7 @@ class Model {
 
 List<Model> questions = [
   Model('What is the capital of Palestine?',
-      ['Gaza', 'Molde', 'Borussia', 'Munich'], 0),
+      ['Al-Quds', 'Molde', 'Borussia', 'Munich'], 0),
   Model('What is the capital of Australia?',
       ['Sydney', 'Canberra', 'Melbourne', 'Perth'], 1),
   Model('What is the capital of Japan?',

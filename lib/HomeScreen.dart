@@ -28,8 +28,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.teal,
       appBar: AppBar(
-        backgroundColor: const Color.fromRGBO(253, 239, 228, 1),
+        backgroundColor: Colors.teal,
         title: const Text(
           'Capitals quiz app',
           style: TextStyle(
@@ -39,9 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
       ),
       body: Container(
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('assets/images/quiz.png'), fit: BoxFit.fill)),
+        decoration: const BoxDecoration(),
         child: SafeArea(
             child: Padding(
                 padding: const EdgeInsets.all(15.0),
@@ -58,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   style: const TextStyle(
                                       fontWeight: FontWeight.w700,
                                       fontSize: 20,
-                                      color: Colors.black),
+                                      color: Colors.white),
                                 )
                               ],
                             ),
@@ -70,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ListView.separated(
                                   itemBuilder: (context, index) => Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.deepPurpleAccent,
+                                      color: Colors.cyan,
                                       borderRadius: BorderRadius.circular(25),
                                     ),
                                     child: MaterialButton(
